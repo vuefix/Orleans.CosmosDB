@@ -89,7 +89,7 @@ namespace Orleans.Clustering.CosmosDB
                     );
 
                     if (response.StatusCode == HttpStatusCode.Created)
-                        this._logger?.Info("Created new Cluster Version entity.");
+                        this._logger?.LogInformation("Created new Cluster Version entity.");
                 }
             }
         }
